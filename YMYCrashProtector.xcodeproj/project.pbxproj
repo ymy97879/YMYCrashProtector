@@ -18,6 +18,8 @@
 		F9D44B4324A5E1830034F14A /* YMYCrashProtectorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D44B4224A5E1830034F14A /* YMYCrashProtectorUITests.m */; };
 		F9D44B5324A6F4020034F14A /* YMYCrashManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D44B5224A6F4020034F14A /* YMYCrashManager.m */; };
 		F9D44B5624A6F6C00034F14A /* YMYCrashLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D44B5524A6F6C00034F14A /* YMYCrashLog.m */; };
+		F9D44B5924A71E0B0034F14A /* NSObject+KVOCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D44B5824A71E0B0034F14A /* NSObject+KVOCrash.m */; };
+		F9D44B5C24A71F9A0034F14A /* NSObject+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D44B5B24A71F9A0034F14A /* NSObject+Swizzle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,10 @@
 		F9D44B5224A6F4020034F14A /* YMYCrashManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMYCrashManager.m; sourceTree = "<group>"; };
 		F9D44B5424A6F6C00034F14A /* YMYCrashLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMYCrashLog.h; sourceTree = "<group>"; };
 		F9D44B5524A6F6C00034F14A /* YMYCrashLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMYCrashLog.m; sourceTree = "<group>"; };
+		F9D44B5724A71E0B0034F14A /* NSObject+KVOCrash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVOCrash.h"; sourceTree = "<group>"; };
+		F9D44B5824A71E0B0034F14A /* NSObject+KVOCrash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVOCrash.m"; sourceTree = "<group>"; };
+		F9D44B5A24A71F9A0034F14A /* NSObject+Swizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzle.h"; sourceTree = "<group>"; };
+		F9D44B5B24A71F9A0034F14A /* NSObject+Swizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzle.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +157,10 @@
 				F9D44B5224A6F4020034F14A /* YMYCrashManager.m */,
 				F9D44B5424A6F6C00034F14A /* YMYCrashLog.h */,
 				F9D44B5524A6F6C00034F14A /* YMYCrashLog.m */,
+				F9D44B5724A71E0B0034F14A /* NSObject+KVOCrash.h */,
+				F9D44B5824A71E0B0034F14A /* NSObject+KVOCrash.m */,
+				F9D44B5A24A71F9A0034F14A /* NSObject+Swizzle.h */,
+				F9D44B5B24A71F9A0034F14A /* NSObject+Swizzle.m */,
 			);
 			path = YMYCrashProtector;
 			sourceTree = "<group>";
@@ -285,6 +295,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9D44B5C24A71F9A0034F14A /* NSObject+Swizzle.m in Sources */,
+				F9D44B5924A71E0B0034F14A /* NSObject+KVOCrash.m in Sources */,
 				F9D44B5624A6F6C00034F14A /* YMYCrashLog.m in Sources */,
 				F9D44B2324A5E17C0034F14A /* ViewController.m in Sources */,
 				F9D44B1D24A5E17C0034F14A /* AppDelegate.m in Sources */,

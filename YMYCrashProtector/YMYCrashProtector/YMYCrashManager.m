@@ -7,7 +7,7 @@
 //
 
 #import "YMYCrashManager.h"
-
+#import "NSObject+KVOCrash.h"
 @implementation YMYCrashManager
 
 
@@ -30,7 +30,7 @@
 //            [NSObject wo_enableSelectorProtector];
             break;
         case CrashProtectorKVO:
-//            [NSObject wo_enableKVOProtector];
+            [NSObject enableKVOProtector];
             break;
         case CrashProtectorNotification:
 //            [NSObject wo_enableNotificationProtector];
