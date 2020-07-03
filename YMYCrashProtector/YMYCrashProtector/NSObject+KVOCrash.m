@@ -44,7 +44,7 @@
     return self;
 }
 
-- (BOOL)addObserver:(id)object KVOinfo:(CPKVOInfo *)KVOinfo
+- (BOOL)ymy_addObserver:(id)object KVOinfo:(CPKVOInfo *)KVOinfo
 {
     [self lock];
     
@@ -74,7 +74,7 @@
     return YES;
 }
 
-- (void)removeObserver:(id)object keyPath:(NSString *)keyPath block:(void (^)(void))block
+- (void)ymy_removeObserver:(id)object keyPath:(NSString *)keyPath block:(void (^)(void))block
 {
 //    if (!object || !keyPath) {
 //        return;
@@ -102,7 +102,7 @@
     [self unlock];
 }
 
-- (void)removeAllObserver
+- (void)ymy_removeAllObserver
 {
     if (_objectInfosMap) {
         NSMapTable *objectInfoMaps = [_objectInfosMap copy];

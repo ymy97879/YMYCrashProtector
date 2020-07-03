@@ -42,7 +42,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @interface NSTimer (Crash)
-+ (void)ymy_enableTimerProtector;
++ (void)enableTimerProtector;
 
 @end
 

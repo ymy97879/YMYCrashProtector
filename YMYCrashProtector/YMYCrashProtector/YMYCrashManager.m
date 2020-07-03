@@ -8,6 +8,7 @@
 
 #import "YMYCrashManager.h"
 #import "NSObject+KVOCrash.h"
+#import "NSTimer+Crash.h"
 @implementation YMYCrashManager
 
 
@@ -36,7 +37,7 @@
 //            [NSObject wo_enableNotificationProtector];
             break;
         case CrashProtectorTimer:
-//            [NSTimer wo_enableTimerProtector];
+            [NSTimer enableTimerProtector];
             break;
         case CrashProtectorContainer: {
 //            [NSArray wo_enableArrayProtector];

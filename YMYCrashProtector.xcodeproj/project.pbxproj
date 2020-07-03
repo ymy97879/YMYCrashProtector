@@ -21,6 +21,13 @@
 		F9D44B5924A71E0B0034F14A /* NSObject+KVOCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D44B5824A71E0B0034F14A /* NSObject+KVOCrash.m */; };
 		F9D44B5C24A71F9A0034F14A /* NSObject+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D44B5B24A71F9A0034F14A /* NSObject+Swizzle.m */; };
 		F9D44C2224AF22D90034F14A /* NSTimer+Crash.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D44C2124AF22D90034F14A /* NSTimer+Crash.m */; };
+		F9D44C2624AF2F430034F14A /* NSString+Crash.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D44C2524AF2F430034F14A /* NSString+Crash.m */; };
+		F9D44C2924AF67490034F14A /* NSMutableArray+Crash.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D44C2824AF67490034F14A /* NSMutableArray+Crash.m */; };
+		F9D44C2C24AF68A60034F14A /* NSArray+Crash.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D44C2B24AF68A60034F14A /* NSArray+Crash.m */; };
+		F9D44C2F24AF6A3E0034F14A /* NSDictionary+Crash.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D44C2E24AF6A3E0034F14A /* NSDictionary+Crash.m */; };
+		F9D44C3224AF6B040034F14A /* NSMutableDictionary+Crash.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D44C3124AF6B040034F14A /* NSMutableDictionary+Crash.m */; };
+		F9D44C3524AF6BD80034F14A /* NSMutableString+Crash.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D44C3424AF6BD80034F14A /* NSMutableString+Crash.m */; };
+		F9D44C3824AF6CB70034F14A /* NSMutableAttributedString+Crash.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D44C3724AF6CB70034F14A /* NSMutableAttributedString+Crash.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +76,20 @@
 		F9D44B5B24A71F9A0034F14A /* NSObject+Swizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzle.m"; sourceTree = "<group>"; };
 		F9D44C2024AF22D90034F14A /* NSTimer+Crash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Crash.h"; sourceTree = "<group>"; };
 		F9D44C2124AF22D90034F14A /* NSTimer+Crash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Crash.m"; sourceTree = "<group>"; };
+		F9D44C2424AF2F430034F14A /* NSString+Crash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Crash.h"; sourceTree = "<group>"; };
+		F9D44C2524AF2F430034F14A /* NSString+Crash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Crash.m"; sourceTree = "<group>"; };
+		F9D44C2724AF67490034F14A /* NSMutableArray+Crash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Crash.h"; sourceTree = "<group>"; };
+		F9D44C2824AF67490034F14A /* NSMutableArray+Crash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Crash.m"; sourceTree = "<group>"; };
+		F9D44C2A24AF68A60034F14A /* NSArray+Crash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Crash.h"; sourceTree = "<group>"; };
+		F9D44C2B24AF68A60034F14A /* NSArray+Crash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Crash.m"; sourceTree = "<group>"; };
+		F9D44C2D24AF6A3E0034F14A /* NSDictionary+Crash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Crash.h"; sourceTree = "<group>"; };
+		F9D44C2E24AF6A3E0034F14A /* NSDictionary+Crash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Crash.m"; sourceTree = "<group>"; };
+		F9D44C3024AF6B040034F14A /* NSMutableDictionary+Crash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Crash.h"; sourceTree = "<group>"; };
+		F9D44C3124AF6B040034F14A /* NSMutableDictionary+Crash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Crash.m"; sourceTree = "<group>"; };
+		F9D44C3324AF6BD80034F14A /* NSMutableString+Crash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+Crash.h"; sourceTree = "<group>"; };
+		F9D44C3424AF6BD80034F14A /* NSMutableString+Crash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+Crash.m"; sourceTree = "<group>"; };
+		F9D44C3624AF6CB70034F14A /* NSMutableAttributedString+Crash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+Crash.h"; sourceTree = "<group>"; };
+		F9D44C3724AF6CB70034F14A /* NSMutableAttributedString+Crash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+Crash.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +177,7 @@
 		F9D44B5024A6F3E30034F14A /* YMYCrashProtector */ = {
 			isa = PBXGroup;
 			children = (
+				F9D44C2324AF2F200034F14A /* Container */,
 				F9D44B5124A6F4020034F14A /* YMYCrashManager.h */,
 				F9D44B5224A6F4020034F14A /* YMYCrashManager.m */,
 				F9D44B5424A6F6C00034F14A /* YMYCrashLog.h */,
@@ -168,6 +190,27 @@
 				F9D44C2124AF22D90034F14A /* NSTimer+Crash.m */,
 			);
 			path = YMYCrashProtector;
+			sourceTree = "<group>";
+		};
+		F9D44C2324AF2F200034F14A /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				F9D44C2424AF2F430034F14A /* NSString+Crash.h */,
+				F9D44C2524AF2F430034F14A /* NSString+Crash.m */,
+				F9D44C2724AF67490034F14A /* NSMutableArray+Crash.h */,
+				F9D44C2824AF67490034F14A /* NSMutableArray+Crash.m */,
+				F9D44C2A24AF68A60034F14A /* NSArray+Crash.h */,
+				F9D44C2B24AF68A60034F14A /* NSArray+Crash.m */,
+				F9D44C2D24AF6A3E0034F14A /* NSDictionary+Crash.h */,
+				F9D44C2E24AF6A3E0034F14A /* NSDictionary+Crash.m */,
+				F9D44C3024AF6B040034F14A /* NSMutableDictionary+Crash.h */,
+				F9D44C3124AF6B040034F14A /* NSMutableDictionary+Crash.m */,
+				F9D44C3324AF6BD80034F14A /* NSMutableString+Crash.h */,
+				F9D44C3424AF6BD80034F14A /* NSMutableString+Crash.m */,
+				F9D44C3624AF6CB70034F14A /* NSMutableAttributedString+Crash.h */,
+				F9D44C3724AF6CB70034F14A /* NSMutableAttributedString+Crash.m */,
+			);
+			path = Container;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,10 +344,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9D44B5C24A71F9A0034F14A /* NSObject+Swizzle.m in Sources */,
+				F9D44C2624AF2F430034F14A /* NSString+Crash.m in Sources */,
 				F9D44B5924A71E0B0034F14A /* NSObject+KVOCrash.m in Sources */,
 				F9D44B5624A6F6C00034F14A /* YMYCrashLog.m in Sources */,
+				F9D44C3524AF6BD80034F14A /* NSMutableString+Crash.m in Sources */,
+				F9D44C2F24AF6A3E0034F14A /* NSDictionary+Crash.m in Sources */,
+				F9D44C3824AF6CB70034F14A /* NSMutableAttributedString+Crash.m in Sources */,
+				F9D44C3224AF6B040034F14A /* NSMutableDictionary+Crash.m in Sources */,
 				F9D44B2324A5E17C0034F14A /* ViewController.m in Sources */,
 				F9D44B1D24A5E17C0034F14A /* AppDelegate.m in Sources */,
+				F9D44C2C24AF68A60034F14A /* NSArray+Crash.m in Sources */,
+				F9D44C2924AF67490034F14A /* NSMutableArray+Crash.m in Sources */,
 				F9D44B5324A6F4020034F14A /* YMYCrashManager.m in Sources */,
 				F9D44C2224AF22D90034F14A /* NSTimer+Crash.m in Sources */,
 				F9D44B2E24A5E1820034F14A /* main.m in Sources */,

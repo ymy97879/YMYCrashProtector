@@ -83,7 +83,7 @@
 
 @implementation NSTimer (Crash)
 
-+ (void)ymy_enableTimerProtector{
++ (void)enableTimerProtector{
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
