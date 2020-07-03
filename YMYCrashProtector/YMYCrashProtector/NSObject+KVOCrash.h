@@ -20,11 +20,11 @@ typedef void (^CPKVONotificationBlock)(id _Nullable observer, id _Nullable objec
  */
 @interface KVOProxy :NSObject
 //添加观察者
-- (BOOL)addObserver:(id _Nullable )object KVOinfo:(CPKVOInfo *_Nullable)KVOInfo;
+- (BOOL)ymy_addObserver:(id _Nullable )object KVOinfo:(CPKVOInfo *_Nullable)KVOInfo;
 //移出指定的观察者
-- (void)removeObserver:(id _Nullable )object keyPath:(NSString *_Nullable)keyPath block:(void(^_Nullable)(void)) block;
+- (void)ymy_removeObserver:(id _Nullable )object keyPath:(NSString *_Nullable)keyPath block:(void(^_Nullable)(void)) block;
 //移出所有观察者
-- (void)removeAllObserver;
+- (void)ymy_removeAllObserver;
 
 @end
 

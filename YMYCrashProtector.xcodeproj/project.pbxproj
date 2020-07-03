@@ -20,6 +20,7 @@
 		F9D44B5624A6F6C00034F14A /* YMYCrashLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D44B5524A6F6C00034F14A /* YMYCrashLog.m */; };
 		F9D44B5924A71E0B0034F14A /* NSObject+KVOCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D44B5824A71E0B0034F14A /* NSObject+KVOCrash.m */; };
 		F9D44B5C24A71F9A0034F14A /* NSObject+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D44B5B24A71F9A0034F14A /* NSObject+Swizzle.m */; };
+		F9D44C2224AF22D90034F14A /* NSTimer+Crash.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D44C2124AF22D90034F14A /* NSTimer+Crash.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		F9D44B5824A71E0B0034F14A /* NSObject+KVOCrash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVOCrash.m"; sourceTree = "<group>"; };
 		F9D44B5A24A71F9A0034F14A /* NSObject+Swizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzle.h"; sourceTree = "<group>"; };
 		F9D44B5B24A71F9A0034F14A /* NSObject+Swizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzle.m"; sourceTree = "<group>"; };
+		F9D44C2024AF22D90034F14A /* NSTimer+Crash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Crash.h"; sourceTree = "<group>"; };
+		F9D44C2124AF22D90034F14A /* NSTimer+Crash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Crash.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +164,8 @@
 				F9D44B5824A71E0B0034F14A /* NSObject+KVOCrash.m */,
 				F9D44B5A24A71F9A0034F14A /* NSObject+Swizzle.h */,
 				F9D44B5B24A71F9A0034F14A /* NSObject+Swizzle.m */,
+				F9D44C2024AF22D90034F14A /* NSTimer+Crash.h */,
+				F9D44C2124AF22D90034F14A /* NSTimer+Crash.m */,
 			);
 			path = YMYCrashProtector;
 			sourceTree = "<group>";
@@ -301,6 +306,7 @@
 				F9D44B2324A5E17C0034F14A /* ViewController.m in Sources */,
 				F9D44B1D24A5E17C0034F14A /* AppDelegate.m in Sources */,
 				F9D44B5324A6F4020034F14A /* YMYCrashManager.m in Sources */,
+				F9D44C2224AF22D90034F14A /* NSTimer+Crash.m in Sources */,
 				F9D44B2E24A5E1820034F14A /* main.m in Sources */,
 				F9D44B2024A5E17C0034F14A /* SceneDelegate.m in Sources */,
 			);

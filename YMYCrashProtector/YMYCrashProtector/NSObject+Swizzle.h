@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param originalSelector 类的原类方法
  @param replaceSelector 替代方法
  */
-+ (void)classSwizzleMethod:(SEL _Nonnull )originalSelector replaceMethod:(SEL _Nonnull )replaceSelector;
++ (void)ymy_classSwizzleMethod:(SEL _Nonnull )originalSelector replaceMethod:(SEL _Nonnull )replaceSelector;
 
 /**
  对对象的实例方法进行拦截并替换
@@ -34,7 +34,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param originalSelector 对象的原实例方法
  @param replaceSelector 替代方法
  */
-- (void)instanceSwizzleMethod:(SEL _Nonnull )originalSelector replaceMethod:(SEL _Nonnull )replaceSelector;
+- (void)ymy_instanceSwizzleMethod:(SEL _Nonnull )originalSelector replaceMethod:(SEL _Nonnull )replaceSelector;
 
 
 
@@ -46,7 +46,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param originalSelector 类的原类方法
  @param replaceSelector 替代方法
  */
-+ (void)classSwizzleMethodWithClass:(Class _Nonnull )klass orginalMethod:(SEL _Nonnull )originalSelector replaceMethod:(SEL _Nonnull )replaceSelector;
++ (void)ymy_classSwizzleMethodWithClass:(Class _Nonnull )klass orginalMethod:(SEL _Nonnull )originalSelector replaceMethod:(SEL _Nonnull )replaceSelector;
 
 /**
  对对象的实例方法进行拦截并替换
@@ -55,7 +55,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param originalSelector 对象的原实例方法
  @param replaceSelector 替代方法
  */
-+ (void)instanceSwizzleMethodWithClass:(Class _Nonnull )klass orginalMethod:(SEL _Nonnull )originalSelector replaceMethod:(SEL _Nonnull )replaceSelector;
++ (void)ymy_instanceSwizzleMethodWithClass:(Class _Nonnull )klass orginalMethod:(SEL _Nonnull )originalSelector replaceMethod:(SEL _Nonnull )replaceSelector;
 @end
 
 NS_ASSUME_NONNULL_END

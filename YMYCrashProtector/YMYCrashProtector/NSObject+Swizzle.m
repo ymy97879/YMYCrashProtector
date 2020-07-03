@@ -19,7 +19,7 @@
 @end
 @implementation NSObject (Swizzle)
 //TODO: 拦截并替换方法
-+ (void)classSwizzleMethod:(SEL)originalSelector replaceMethod:(SEL)replaceSelector {
++ (void)ymy_classSwizzleMethod:(SEL)originalSelector replaceMethod:(SEL)replaceSelector {
     Class class = [self class];
     
     // Method中包含IMP函数指针，通过替换IMP，使SEL调用不同函数实现
@@ -44,7 +44,7 @@
     }
 }
 
-- (void)instanceSwizzleMethod:(SEL _Nonnull )originalSelector replaceMethod:(SEL _Nonnull )replaceSelector {
+- (void)ymy_instanceSwizzleMethod:(SEL _Nonnull )originalSelector replaceMethod:(SEL _Nonnull )replaceSelector {
     Class class = [self class];
     Method origMethod = class_getInstanceMethod(class, originalSelector);
     Method replaceMeathod = class_getInstanceMethod(class, replaceSelector);
@@ -66,7 +66,7 @@
     }
 }
 
-+ (void)classSwizzleMethodWithClass:(Class _Nonnull )klass orginalMethod:(SEL _Nonnull )originalSelector replaceMethod:(SEL _Nonnull )replaceSelector {
++ (void)ymy_classSwizzleMethodWithClass:(Class _Nonnull )klass orginalMethod:(SEL _Nonnull )originalSelector replaceMethod:(SEL _Nonnull )replaceSelector {
     
     // Method中包含IMP函数指针，通过替换IMP，使SEL调用不同函数实现
     Method origMethod = class_getClassMethod(klass, originalSelector);
@@ -90,7 +90,7 @@
     }
 }
 
-+ (void)instanceSwizzleMethodWithClass:(Class _Nonnull )klass orginalMethod:(SEL _Nonnull )originalSelector replaceMethod:(SEL _Nonnull )replaceSelector {
++ (void)ymy_instanceSwizzleMethodWithClass:(Class _Nonnull )klass orginalMethod:(SEL _Nonnull )originalSelector replaceMethod:(SEL _Nonnull )replaceSelector {
     
     Method origMethod = class_getInstanceMethod(klass, originalSelector);
     Method replaceMeathod = class_getInstanceMethod(klass, replaceSelector);

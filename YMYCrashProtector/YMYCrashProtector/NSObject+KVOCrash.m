@@ -102,7 +102,7 @@
     [self unlock];
 }
 
-- (void)wo_removeAllObserver
+- (void)removeAllObserver
 {
     if (_objectInfosMap) {
         NSMapTable *objectInfoMaps = [_objectInfosMap copy];
@@ -209,14 +209,14 @@ static int const WONSObjectKVOCrashKey;
 
 @implementation NSObject (KVOCrash)
 
-+ (void)wo_enableKVOProtector {
++ (void)enableKVOProtector {
 
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         
         NSObject *objc = [[NSObject alloc] init];
-        [objc instanceSwizzleMethod:@selector(addObserver:forKeyPath:options:context:) replaceMethod:@selector(wo_addObserver:forKeyPath:options:context:)];
-        [objc instanceSwizzleMethod:@selector(removeObserver:forKeyPath:) replaceMethod:@selector(wo_removeObserver:forKeyPath:)];
+        [objc ymy_instanceSwizzleMethod:@selector(addObserver:forKeyPath:options:context:) replaceMethod:@selector(ymy_addObserver:forKeyPath:options:context:)];
+        [objc ymy_instanceSwizzleMethod:@selector(removeObserver:forKeyPath:) replaceMethod:@selector(ymy_removeObserver:forKeyPath:)];
     });
 }
 
@@ -225,7 +225,7 @@ static int const WONSObjectKVOCrashKey;
  keyPath为对象的属性，通过keyPath作为Key创建对应对应的一条观察者关键路径：keyPath --> observer(self)
  
  */
-- (void)wo_addObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options context:(void *)context {
+- (void)ymy_addObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options context:(void *)context {
     
 //    WOCPKVOInfo * kvoInfo = [[WOCPKVOInfo alloc] initWithKeyPath:keyPath options:options context:context];
 //    __weak typeof(self) wkself = self;
@@ -238,7 +238,7 @@ static int const WONSObjectKVOCrashKey;
 //    [self wo_addObserver:observer forKeyPath:keyPath options:options context:context];
 
     @try {
-        [self wo_addObserver:observer forKeyPath:keyPath options:options context:context];
+        [self ymy_addObserver:observer forKeyPath:keyPath options:options context:context];
     }
     @catch (NSException *exception) {
         [YMYCrashLog noteErrorWithException:exception attachedTODO:@""];
@@ -261,14 +261,14 @@ static int const WONSObjectKVOCrashKey;
     }
 }
 
-- (void)wo_removeObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath {
+- (void)ymy_removeObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath {
 //    NSLog(@"swizzled removeObserver");
 //    [self.KVOProxy wo_removeObserver:observer keyPath:keyPath block:^{
 //        [self wo_removeObserver:observer forKeyPath:keyPath];
 //    }];
 
     @try {
-        [self wo_removeObserver:observer forKeyPath:keyPath];
+        [self ymy_removeObserver:observer forKeyPath:keyPath];
     }
     @catch (NSException *exception) {
         // 打印crash信息
