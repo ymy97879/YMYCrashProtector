@@ -28,6 +28,7 @@
 		F9D44C3224AF6B040034F14A /* NSMutableDictionary+Crash.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D44C3124AF6B040034F14A /* NSMutableDictionary+Crash.m */; };
 		F9D44C3524AF6BD80034F14A /* NSMutableString+Crash.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D44C3424AF6BD80034F14A /* NSMutableString+Crash.m */; };
 		F9D44C3824AF6CB70034F14A /* NSMutableAttributedString+Crash.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D44C3724AF6CB70034F14A /* NSMutableAttributedString+Crash.m */; };
+		F9D44C3B24AF6DF70034F14A /* NSAttributedString+Crash.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D44C3A24AF6DF70034F14A /* NSAttributedString+Crash.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,8 @@
 		F9D44C3424AF6BD80034F14A /* NSMutableString+Crash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+Crash.m"; sourceTree = "<group>"; };
 		F9D44C3624AF6CB70034F14A /* NSMutableAttributedString+Crash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+Crash.h"; sourceTree = "<group>"; };
 		F9D44C3724AF6CB70034F14A /* NSMutableAttributedString+Crash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+Crash.m"; sourceTree = "<group>"; };
+		F9D44C3924AF6DF70034F14A /* NSAttributedString+Crash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Crash.h"; sourceTree = "<group>"; };
+		F9D44C3A24AF6DF70034F14A /* NSAttributedString+Crash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Crash.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +212,8 @@
 				F9D44C3424AF6BD80034F14A /* NSMutableString+Crash.m */,
 				F9D44C3624AF6CB70034F14A /* NSMutableAttributedString+Crash.h */,
 				F9D44C3724AF6CB70034F14A /* NSMutableAttributedString+Crash.m */,
+				F9D44C3924AF6DF70034F14A /* NSAttributedString+Crash.h */,
+				F9D44C3A24AF6DF70034F14A /* NSAttributedString+Crash.m */,
 			);
 			path = Container;
 			sourceTree = "<group>";
@@ -359,6 +364,7 @@
 				F9D44C2224AF22D90034F14A /* NSTimer+Crash.m in Sources */,
 				F9D44B2E24A5E1820034F14A /* main.m in Sources */,
 				F9D44B2024A5E17C0034F14A /* SceneDelegate.m in Sources */,
+				F9D44C3B24AF6DF70034F14A /* NSAttributedString+Crash.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

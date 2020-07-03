@@ -9,6 +9,18 @@
 #import "YMYCrashManager.h"
 #import "NSObject+KVOCrash.h"
 #import "NSTimer+Crash.h"
+#import "NSObject+KVOCrash.h"
+#import "NSTimer+Crash.h"
+#import "NSArray+Crash.h"
+#import "NSMutableArray+Crash.h"
+#import "NSDictionary+Crash.h"
+#import "NSMutableDictionary+Crash.h"
+#import "NSString+Crash.h"
+#import "NSMutableString+Crash.h"
+#import "NSAttributedString+Crash.h"
+#import "NSMutableAttributedString+Crash.h"
+
+
 @implementation YMYCrashManager
 
 
@@ -40,19 +52,19 @@
             [NSTimer enableTimerProtector];
             break;
         case CrashProtectorContainer: {
-//            [NSArray wo_enableArrayProtector];
-//            [NSMutableArray wo_enableMutableArrayProtector];
-//
-//            [NSDictionary wo_enableDictionaryProtector];
-//            [NSMutableDictionary wo_enableMutableDictionaryProtector];
+            [NSArray enableArrayProtector];
+            [NSMutableArray enableMutableArrayProtector];
+
+            [NSDictionary enableDictionaryProtector];
+            [NSMutableDictionary enableMutableDictionaryProtector];
         }
             break;
         case CrashProtectorString: {
-//            [NSString wo_enableStringProtector];
-//            [NSMutableString wo_enableMutableStringProtector];
-//
-//            [NSAttributedString wo_enableAttributedStringProtector];
-//            [NSMutableAttributedString wo_enableMutableAttributedStringProtector];
+            [NSString enableStringProtector];
+            [NSMutableString enableMutableStringProtector];
+
+            [NSAttributedString enableAttributedStringProtector];
+            [NSMutableAttributedString enableMutableAttributedStringProtector];
         }
             break;
             
@@ -64,21 +76,21 @@
 
 + (void)startAllComponents {
 //    [NSObject wo_enableSelectorProtector];
-//    [NSObject wo_enableKVOProtector];
+    [NSObject enableKVOProtector];
 //    [NSObject wo_enableNotificationProtector]; // 可能会有性能问题，dealloc里面加了判断，系统的每个对象dealloc时都会调用
 //
-//    [NSTimer wo_enableTimerProtector];
-//    [NSArray wo_enableArrayProtector];
-//    [NSMutableArray wo_enableMutableArrayProtector];
-//
-//    [NSDictionary wo_enableDictionaryProtector];
-//    [NSMutableDictionary wo_enableMutableDictionaryProtector];
-//
-//    [NSString wo_enableStringProtector];
-//    [NSMutableString wo_enableMutableStringProtector];
-//
-//    [NSAttributedString wo_enableAttributedStringProtector];
-//    [NSMutableAttributedString wo_enableMutableAttributedStringProtector];
+    [NSTimer enableTimerProtector];
+    [NSArray enableArrayProtector];
+    [NSMutableArray enableMutableArrayProtector];
+
+    [NSDictionary enableDictionaryProtector];
+    [NSMutableDictionary enableMutableDictionaryProtector];
+
+    [NSString enableStringProtector];
+    [NSMutableString enableMutableStringProtector];
+
+    [NSAttributedString enableAttributedStringProtector];
+    [NSMutableAttributedString enableMutableAttributedStringProtector];
 }
 
 @end

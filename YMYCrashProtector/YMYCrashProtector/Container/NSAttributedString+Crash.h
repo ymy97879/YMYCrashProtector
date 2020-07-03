@@ -1,5 +1,5 @@
 //
-//  NSMutableAttributedString+Crash.h
+//  NSAttributedString+Crash.h
 //  YMYCrashProtector
 //
 //  Created by ymy on 2020/7/3.
@@ -10,8 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSMutableAttributedString (Crash)
-+ (void)enableMutableAttributedStringProtector;
+@interface NSAttributedString (Crash)
++ (void)enableAttributedStringProtector;
+
 @end
 
 NS_ASSUME_NONNULL_END
