@@ -29,6 +29,8 @@
 		F9D44C3524AF6BD80034F14A /* NSMutableString+Crash.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D44C3424AF6BD80034F14A /* NSMutableString+Crash.m */; };
 		F9D44C3824AF6CB70034F14A /* NSMutableAttributedString+Crash.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D44C3724AF6CB70034F14A /* NSMutableAttributedString+Crash.m */; };
 		F9D44C3B24AF6DF70034F14A /* NSAttributedString+Crash.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D44C3A24AF6DF70034F14A /* NSAttributedString+Crash.m */; };
+		F9D44C3E24B020420034F14A /* person.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D44C3D24B020420034F14A /* person.m */; };
+		F9D44C4124B020BD0034F14A /* NSObject+SelectorCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D44C4024B020BD0034F14A /* NSObject+SelectorCrash.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,10 @@
 		F9D44C3724AF6CB70034F14A /* NSMutableAttributedString+Crash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+Crash.m"; sourceTree = "<group>"; };
 		F9D44C3924AF6DF70034F14A /* NSAttributedString+Crash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Crash.h"; sourceTree = "<group>"; };
 		F9D44C3A24AF6DF70034F14A /* NSAttributedString+Crash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Crash.m"; sourceTree = "<group>"; };
+		F9D44C3C24B020420034F14A /* person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = person.h; sourceTree = "<group>"; };
+		F9D44C3D24B020420034F14A /* person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = person.m; sourceTree = "<group>"; };
+		F9D44C3F24B020BD0034F14A /* NSObject+SelectorCrash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+SelectorCrash.h"; sourceTree = "<group>"; };
+		F9D44C4024B020BD0034F14A /* NSObject+SelectorCrash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SelectorCrash.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +156,8 @@
 				F9D44B1F24A5E17C0034F14A /* SceneDelegate.m */,
 				F9D44B2124A5E17C0034F14A /* ViewController.h */,
 				F9D44B2224A5E17C0034F14A /* ViewController.m */,
+				F9D44C3C24B020420034F14A /* person.h */,
+				F9D44C3D24B020420034F14A /* person.m */,
 				F9D44B2424A5E17C0034F14A /* Main.storyboard */,
 				F9D44B2724A5E1820034F14A /* Assets.xcassets */,
 				F9D44B2924A5E1820034F14A /* LaunchScreen.storyboard */,
@@ -191,6 +199,8 @@
 				F9D44B5B24A71F9A0034F14A /* NSObject+Swizzle.m */,
 				F9D44C2024AF22D90034F14A /* NSTimer+Crash.h */,
 				F9D44C2124AF22D90034F14A /* NSTimer+Crash.m */,
+				F9D44C3F24B020BD0034F14A /* NSObject+SelectorCrash.h */,
+				F9D44C4024B020BD0034F14A /* NSObject+SelectorCrash.m */,
 			);
 			path = YMYCrashProtector;
 			sourceTree = "<group>";
@@ -356,6 +366,7 @@
 				F9D44C2F24AF6A3E0034F14A /* NSDictionary+Crash.m in Sources */,
 				F9D44C3824AF6CB70034F14A /* NSMutableAttributedString+Crash.m in Sources */,
 				F9D44C3224AF6B040034F14A /* NSMutableDictionary+Crash.m in Sources */,
+				F9D44C3E24B020420034F14A /* person.m in Sources */,
 				F9D44B2324A5E17C0034F14A /* ViewController.m in Sources */,
 				F9D44B1D24A5E17C0034F14A /* AppDelegate.m in Sources */,
 				F9D44C2C24AF68A60034F14A /* NSArray+Crash.m in Sources */,
@@ -364,6 +375,7 @@
 				F9D44C2224AF22D90034F14A /* NSTimer+Crash.m in Sources */,
 				F9D44B2E24A5E1820034F14A /* main.m in Sources */,
 				F9D44B2024A5E17C0034F14A /* SceneDelegate.m in Sources */,
+				F9D44C4124B020BD0034F14A /* NSObject+SelectorCrash.m in Sources */,
 				F9D44C3B24AF6DF70034F14A /* NSAttributedString+Crash.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

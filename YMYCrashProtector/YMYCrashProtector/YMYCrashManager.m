@@ -19,7 +19,7 @@
 #import "NSMutableString+Crash.h"
 #import "NSAttributedString+Crash.h"
 #import "NSMutableAttributedString+Crash.h"
-
+#import "NSObject+SelectorCrash.h"
 
 @implementation YMYCrashManager
 
@@ -40,7 +40,7 @@
         }
             break;
         case CrashProtectorUnrecognizedSelector:
-//            [NSObject wo_enableSelectorProtector];
+            [NSObject enableSelectorProtector];
             break;
         case CrashProtectorKVO:
             [NSObject enableKVOProtector];
