@@ -19,7 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [YMYCrashManager makeAllEffective];
-
+    NSLog(@"运行了");
     [self executeAllTestMethod];
 }
 
@@ -362,27 +362,27 @@
 
 - (void)executeAllTestMethod {
     [self NSArray_Test_InstanceArray];
-    [self NSArray_Test_ObjectAtIndex];
-    [self NSArray_Test_objectsAtIndexes];
-    [self NSArray_Test_getObjectsRange];
-    
-    
-    [self NSMutableArray_Test_ObjectAtIndex];
-    [self NSMutableArray_Test_SetObjectAtIndex];
-    [self NSMutableArray_Test_RemoveObjectAtIndex];
-    [self NSMutableArray_Test_InsertObjectAtIndex];
-    [self NSMutableArray_Test_GetObjectsRange];
-    
-    
-    [self NSDictionary_Test_InstanceDictionary];
-    [self NSMutableDictionary_Test_SetObjectForKey];
-    [self NSMutableDictionary_Test_RemoveObjectForKey];
-    
-    
-    [self NSString_Test_CharacterAtIndex];
-    [self NSString_Test_SubstringFromIndex];
-    [self NSString_Test_SubstringToIndex];
-    [self NSString_Test_SubstringWithRange];
+//    [self NSArray_Test_ObjectAtIndex];
+//    [self NSArray_Test_objectsAtIndexes];
+//    [self NSArray_Test_getObjectsRange];
+//
+//
+//    [self NSMutableArray_Test_ObjectAtIndex];
+//    [self NSMutableArray_Test_SetObjectAtIndex];
+//    [self NSMutableArray_Test_RemoveObjectAtIndex];
+//    [self NSMutableArray_Test_InsertObjectAtIndex];
+//    [self NSMutableArray_Test_GetObjectsRange];
+//
+//
+//    [self NSDictionary_Test_InstanceDictionary];
+//    [self NSMutableDictionary_Test_SetObjectForKey];
+//    [self NSMutableDictionary_Test_RemoveObjectForKey];
+//
+//
+//    [self NSString_Test_CharacterAtIndex];
+//    [self NSString_Test_SubstringFromIndex];
+//    [self NSString_Test_SubstringToIndex];
+//    [self NSString_Test_SubstringWithRange];
     
     // 目前尚未支持以下操作防护
 //    [self NSString_Test_StringByReplacingOccurrencesOfString];
@@ -409,7 +409,7 @@
     //    [self KVC_Test_SetValuesForKeysWithDictionary];
     
     
-    [self testNoSelectorCrash];
+//    [self testNoSelectorCrash];
 }
 
 
